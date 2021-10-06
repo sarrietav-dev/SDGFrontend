@@ -4,19 +4,35 @@
     <form action="" method="post">
       <ProfileFormControl>
         <label for="name">Nombre</label>
-        <input id="name" type="text" />
+        <input
+          id="name"
+          type="text"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="birthday">Fecha de nacimiento</label>
-        <input id="birthdate" type="date" />
+        <input
+          id="birthdate"
+          type="date"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="surname">Apellidos</label>
-        <input id="surname" type="text" />
+        <input
+          id="surname"
+          type="text"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="gender">Genero</label>
-        <select id="gender" name="gender">
+        <label for="gender">Género</label>
+        <select
+          id="gender"
+          name="gender"
+          class="rounded focus:border-blue-400 text-gray-700"
+        >
           <option value="male">Masculino</option>
           <option value="female">Femenino</option>
           <option value="none">Prefiero no decir</option>
@@ -24,19 +40,35 @@
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="address">Dirección</label>
-        <input id="address" type="text" />
+        <input
+          id="address"
+          type="text"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="email">Email</label>
-        <input id="email" type="email" />
+        <input
+          id="email"
+          type="email"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="tel">Teléfono</label>
-        <input id="tel" type="tel" />
+        <input
+          id="tel"
+          type="tel"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <ProfileFormControl>
         <label for="username">Nombre de usuario</label>
-        <input id="username" type="text" />
+        <input
+          id="username"
+          type="text"
+          class="rounded focus:border-blue-400 text-gray-700"
+        />
       </ProfileFormControl>
       <button type="submit">Editar datos</button>
     </form>
