@@ -70,7 +70,12 @@
           class="rounded focus:border-blue-400 text-gray-700"
         />
       </ProfileFormControl>
-      <button type="submit">Editar datos</button>
+      <button
+        type="submit"
+        class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700"
+      >
+        Editar datos
+      </button>
     </form>
   </main>
 </template>

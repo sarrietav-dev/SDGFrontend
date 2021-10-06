@@ -4,4 +4,9 @@ module.exports = {
     // ...
     require('@tailwindcss/forms'),
   ],
+  variants: {
+    extend: {
+      backgroundColor: ['active'],
+    },
+  },
 }
