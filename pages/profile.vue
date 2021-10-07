@@ -1,9 +1,9 @@
 <template>
-  <main class="m-6">
-    <h1 class="font-bold text-center text-2xl my-4">Perfil</h1>
+  <main class="m-4 px-3 py-6 rounded-md shadow-md bg-gray-200">
+    <h1 class="font-bold text-center text-2xl mb-8">Perfil</h1>
     <form action="" method="post">
       <ProfileFormControl>
-        <label for="name">Nombre</label>
+        <label for="name" class="text-gray-700 font-medium">Nombre</label>
         <input
           id="name"
           type="text"
@@ -11,7 +11,9 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="birthday">Fecha de nacimiento</label>
+        <label for="birthday" class="text-gray-700 font-medium"
+          >Fecha de nacimiento</label
+        >
         <input
           id="birthdate"
           type="date"
@@ -19,7 +21,7 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="surname">Apellidos</label>
+        <label for="surname" class="text-gray-700 font-medium">Apellidos</label>
         <input
           id="surname"
           type="text"
@@ -27,7 +29,7 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="gender">Género</label>
+        <label for="gender" class="text-gray-700 font-medium">Género</label>
         <select
           id="gender"
           name="gender"
@@ -39,7 +41,7 @@
         </select>
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="address">Dirección</label>
+        <label for="address" class="text-gray-700 font-medium">Dirección</label>
         <input
           id="address"
           type="text"
@@ -47,7 +49,7 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="email">Email</label>
+        <label for="email" class="text-gray-700 font-medium">Email</label>
         <input
           id="email"
           type="email"
@@ -55,7 +57,7 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="tel">Teléfono</label>
+        <label for="tel" class="text-gray-700 font-medium">Teléfono</label>
         <input
           id="tel"
           type="tel"
@@ -63,7 +65,9 @@
         />
       </ProfileFormControl>
       <ProfileFormControl>
-        <label for="username">Nombre de usuario</label>
+        <label for="username" class="text-gray-700 font-medium"
+          >Nombre de usuario</label
+        >
         <input
           id="username"
           type="text"
@@ -72,7 +76,7 @@
       </ProfileFormControl>
       <button
         type="submit"
-        class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700"
+        class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700 font-medium"
       >
         Editar datos
       </button>
