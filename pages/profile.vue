@@ -30,7 +30,7 @@
         <input
           id="name"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -41,7 +41,7 @@
         <input
           id="birthdate"
           type="date"
-          class="rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -50,7 +50,7 @@
         <input
           id="surname"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -59,7 +59,7 @@
         <select
           id="gender"
           name="gender"
-          class="rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-800 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-800 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         >
           <option value="male">Masculino</option>
@@ -72,7 +72,7 @@
         <input
           id="address"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -81,7 +81,7 @@
         <input
           id="email"
           type="email"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -90,7 +90,7 @@
         <input
           id="tel"
           type="tel"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
@@ -101,7 +101,7 @@
         <input
           id="username"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          class="transition-all rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
           :disabled="!editing"
         />
       </ProfileFormControl>
