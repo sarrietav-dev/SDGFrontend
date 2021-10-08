@@ -111,7 +111,7 @@
         :class="buttonEditingStyles"
         @click="handleEdit"
       >
-        Editar datos
+        {{ editing ? 'Guardar cambios' : 'Editar perfil' }}
       </button>
     </form>
   </main>
