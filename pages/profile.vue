@@ -108,6 +108,7 @@
       <button
         :type="buttonType"
         class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700 font-medium col-start-2 col-span-2 justify-self-center lg:self-center lg:w-52"
+        :class="buttonEditingStyles"
         @click="handleEdit"
       >
         Editar datos
@@ -126,6 +127,9 @@ export default {
   computed: {
     buttonType() {
       return this.editing ? 'submit' : 'button'
+    },
+    buttonEditingStyles() {
+      return this.editing ? 'bg-green-500 active:bg-green-600' : ''
     },
   },
   methods: {
