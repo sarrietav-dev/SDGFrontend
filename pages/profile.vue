@@ -1,8 +1,11 @@
 <template>
-  <main class="m-4 px-3 py-6 rounded-md shadow-md bg-gray-200">
+  <main class="mx-32 my-10 px-3 py-6 rounded-md shadow-md bg-gray-200">
     <h1 class="font-bold text-center text-2xl mb-8">Perfil</h1>
-    <form action="" method="post">
-      <div class="flex flex-col justify-center items-center">
+    <form
+      method="post"
+      class="lg:grid grid-cols-4 grid-rows-5 gap-x-10 lg:px-9"
+    >
+      <div class="flex flex-col justify-center items-center row-span-2">
         <img
           src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=tiles"
           class="rounded-full h-32 w-32 text-center m-0"
@@ -20,12 +23,12 @@
           <label for="image"> </label>
         </div>
       </div>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-start-2 col-span-2">
         <label for="name" class="text-gray-700 font-medium">Nombre</label>
         <input
           id="name"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
       <ProfileFormControl>
@@ -38,12 +41,12 @@
           class="rounded focus:border-blue-400 text-gray-700"
         />
       </ProfileFormControl>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-start-2 col-span-2">
         <label for="surname" class="text-gray-700 font-medium">Apellidos</label>
         <input
           id="surname"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
       <ProfileFormControl>
@@ -58,43 +61,43 @@
           <option value="none">Prefiero no decir</option>
         </select>
       </ProfileFormControl>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-span-2">
         <label for="address" class="text-gray-700 font-medium">Dirección</label>
         <input
           id="address"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-span-2">
         <label for="email" class="text-gray-700 font-medium">Email</label>
         <input
           id="email"
           type="email"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-span-2">
         <label for="tel" class="text-gray-700 font-medium">Teléfono</label>
         <input
           id="tel"
           type="tel"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
-      <ProfileFormControl>
+      <ProfileFormControl class="col-span-2">
         <label for="username" class="text-gray-700 font-medium"
           >Nombre de usuario</label
         >
         <input
           id="username"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
         />
       </ProfileFormControl>
       <button
         type="submit"
-        class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700 font-medium"
+        class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700 font-medium col-start-2 col-span-2 justify-self-center lg:self-center lg:w-52"
       >
         Editar datos
       </button>
