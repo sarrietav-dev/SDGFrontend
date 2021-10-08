@@ -4,6 +4,7 @@
     <form
       method="post"
       class="lg:grid grid-cols-4 grid-rows-5 gap-x-10 lg:px-9"
+      @submit.prevent=""
     >
       <div class="flex flex-col justify-center items-center row-span-2">
         <img
@@ -18,8 +19,9 @@
             id="image"
             type="file"
             name="image"
-            class="opacity-0 absolute left-0 top-0 w-full h-full"
+            class="opacity-0 absolute left-0 top-0 w-full h-full cursor-pointer"
           />
+          <!-- To hide the input[type="file"] label -->
           <label for="image"> </label>
         </div>
       </div>
@@ -28,7 +30,8 @@
         <input
           id="name"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl>
@@ -38,7 +41,8 @@
         <input
           id="birthdate"
           type="date"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl class="col-start-2 col-span-2">
@@ -46,7 +50,8 @@
         <input
           id="surname"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl>
@@ -54,7 +59,8 @@
         <select
           id="gender"
           name="gender"
-          class="rounded focus:border-blue-400 text-gray-700"
+          class="rounded focus:border-blue-400 text-gray-700 disabled:bg-gray-800 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         >
           <option value="male">Masculino</option>
           <option value="female">Femenino</option>
@@ -66,7 +72,8 @@
         <input
           id="address"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl class="col-span-2">
@@ -74,7 +81,8 @@
         <input
           id="email"
           type="email"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl class="col-span-2">
@@ -82,7 +90,8 @@
         <input
           id="tel"
           type="tel"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <ProfileFormControl class="col-span-2">
@@ -92,15 +101,37 @@
         <input
           id="username"
           type="text"
-          class="rounded focus:border-blue-400 text-gray-700 lg:w-full"
+          class="rounded focus:border-blue-400 text-gray-700 lg:w-full disabled:bg-gray-600 disabled:text-gray-400 disabled:border-gray-300"
+          :disabled="!editing"
         />
       </ProfileFormControl>
       <button
-        type="submit"
+        :type="buttonType"
         class="transition-all bg-indigo-500 px-5 py-2 text-white w-full rounded active:bg-indigo-700 font-medium col-start-2 col-span-2 justify-self-center lg:self-center lg:w-52"
+        @click="handleEdit"
       >
         Editar datos
       </button>
     </form>
   </main>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      editing: false,
+    }
+  },
+  computed: {
+    buttonType() {
+      return this.editing ? 'submit' : 'button'
+    },
+  },
+  methods: {
+    handleEdit() {
+      this.editing = !this.editing
+    },
+  },
+}
+</script>
