@@ -2,6 +2,24 @@
   <main class="m-4 px-3 py-6 rounded-md shadow-md bg-gray-200">
     <h1 class="font-bold text-center text-2xl mb-8">Perfil</h1>
     <form action="" method="post">
+      <div class="flex flex-col justify-center items-center">
+        <img
+          src="https://generative-placeholders.glitch.me/image?width=600&height=300&style=tiles"
+          class="rounded-full h-32 w-32 text-center m-0"
+        />
+        <div class="relative my-6">
+          <button class="bg-indigo-300 active:bg-indigo-400 px-5 py-2 rounded">
+            Sube tu imagen
+          </button>
+          <input
+            id="image"
+            type="file"
+            name="image"
+            class="opacity-0 absolute left-0 top-0 w-full h-full"
+          />
+          <label for="image"> </label>
+        </div>
+      </div>
       <ProfileFormControl>
         <label for="name" class="text-gray-700 font-medium">Nombre</label>
         <input
